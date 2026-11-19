@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Booking</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -15,6 +17,99 @@
     <a href="reference.html">References</a>
   </nav>
 </header>
-    
+
+<main>
+    <section class="booking-intro">
+        <h2>Book a Room</h2>
+        <p>
+            Select a room and fill out the reservation form below.
+        </p>
+    </section>
+    <section class="rooms">
+        <h2>UH Sugar Land Study Rooms</h2>
+
+        <div class="room-container">
+
+            <div class="room-card">
+                <h3>Room 1</h3>
+                <p>Study Room 1</p>
+            </div>
+
+            <div class="room-card">
+                <h3>Room 2</h3>
+                <p>Study Room 2</p>
+            </div>
+
+            <div class="room-card">
+                <h3>Room 3</h3>
+                <p>Study Room 3</p>
+            </div>
+
+            <div class="room-card">
+                <h3>Room 4</h3>
+                <p>Study Room 4</p>
+            </div>
+
+            <div class="room-card">
+                <h3>Room 5</h3>
+                <p>Study Room 5</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="reservation">
+        <h2>Reservation Form</h2>
+
+        <form id="bookingForm">
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName"
+                   name="fullName" required>
+
+            <label for="email">UH Email:</label>
+            <input type="email" id="email"
+                   name="email" required>
+
+            <label for="room">Select a Room:</label>
+            <select id="room" name="room" required>
+                <option value="">Choose a Room</option>
+                <option value="room1">Room 1</option>
+                <option value="room2">Room 2</option>
+                <option value="room3">Room 3</option>
+                <option value="room4">Room 4</option>
+                <option value="room5">Room 5</option>
+            </select>
+
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date"
+                   name="date" required>
+
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime"
+                   name="startTime" required>
+
+            <label for="endTime">End Time:</label>
+            <input type="time" id="endTime"
+                   name="endTime" required>
+
+            <button type="submit">
+                Submit Reservation
+            </button>
+
+        </form>
+    </section>
+
+    <!-- Booking Feedback -->
+    <section class="booking-status">
+        <h2>Reservation Status</h2>
+        <p id="bookingMessage" role="status"></p>
+    </section>
+
+</main>
+
+    <footer>
+        <p>Contact Developer | Adam Rakrouki | <a href="mailto: arakrouk@cougarnet.uh.edu">arakrouk@cougarnet.uh.edu</a> | University of Houston</p>
+    </footer>
 </body>
 </html>
